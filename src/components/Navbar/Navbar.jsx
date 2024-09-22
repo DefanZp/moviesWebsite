@@ -17,7 +17,6 @@ const Navbar = () => {
           <li>Movies</li>
           <li>New & Popular</li>
           <li>My List</li>
-          <li>Browse by Languages</li>
         </ul>
       </div>
 
