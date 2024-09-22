@@ -5,6 +5,7 @@ import search_icon from '../../assets/search_icon.png'
 import bell_icon from '../../assets/bell_icon.svg'
 import profile_img from '../../assets/profile_img.png'
 import caret_icon from '../../assets/caret_icon.svg'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -12,9 +13,9 @@ const Navbar = () => {
       <div className="navbar-left">
         <img src={logo} alt="" />
         <ul>
-          <li>Home</li>
-          <li>Tv Shows</li>
-          <li>Movies</li>
+         <Link to={'/'}> <li>Home</li></Link>
+         <Link to={'/tvshows'}> <li>TvShows</li></Link>
+         <Link to={'/movies'}> <li>Movies</li></Link>
           <li>New & Popular</li>
           <li>My List</li>
         </ul>

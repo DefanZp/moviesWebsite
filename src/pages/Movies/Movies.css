@@ -1,0 +1,12 @@
+.Header {
+    text-align: center;
+}
+
+.back img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+  }
+  

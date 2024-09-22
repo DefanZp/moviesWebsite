@@ -1,0 +1,60 @@
+.tv-shows {
+    margin: 20px;
+    color: white;
+  }
+
+  .back img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .tv-show-row {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  
+  .tv-card {
+    min-width: 200px;
+    max-width: 200px;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .tv-card img {
+    width: 100%;
+    border-bottom: 2px solid #444;
+  }
+  
+  .tv-card p {
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .tv-show-row {
+    display: flex; 
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    white-space: nowrap; 
+    scroll-behavior: smooth; 
+  }
+  
+  .tv-card {
+    min-width: 150px; 
+    margin-right: 10px; 
+    flex-shrink: 0; 
+  }
+
+  .Header {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  

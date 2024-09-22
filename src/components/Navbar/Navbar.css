@@ -28,6 +28,8 @@
 
 .navbar-left ul li {
     cursor: pointer;
+    text-decoration: none;
+    color: #e5e5e5;
 }
 
 .navbar-right {
@@ -74,4 +76,8 @@
 
 .navbar-profile:hover .dropdown{
     display: block;
+}
+
+li:hover {
+    color: white;
 }
