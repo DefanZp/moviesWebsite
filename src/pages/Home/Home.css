@@ -5,27 +5,27 @@
     width: 100%;
     mask-image: linear-gradient(to right, transparent, black 100%);
     -webkit-mask-image: linear-gradient(to right, transparent, black 100%);
-    
 }
 
 .hero-caption{
     position: absolute;
     width: 100%;
     padding-left: 6%;
-    bottom: 0;
+    top: 22%;
 }
 
 .more-cards{
     padding-left: 6%;
 }
 
-.caption-img{
+.caption-img {
     width: 30%;
     max-width: 420px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
-.hero-caption p {
+
+.hero-caption .spd-cp {
     max-width: 700px;
     font-size: 17px;
     margin-bottom: 20px;

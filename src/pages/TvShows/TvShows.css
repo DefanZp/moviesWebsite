@@ -13,7 +13,7 @@
   
   .tv-show-row {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 20px;
     padding: 10px 0;
   }
@@ -41,11 +41,13 @@
   .tv-show-row {
     display: flex; 
     overflow-x: scroll; 
-    overflow-y: hidden; 
     white-space: nowrap; 
-    scroll-behavior: smooth; 
   }
   
+  .tv-show-row::-webkit-scrollbar {
+    display: none;
+  }
+
   .tv-card {
     min-width: 150px; 
     margin-right: 10px; 

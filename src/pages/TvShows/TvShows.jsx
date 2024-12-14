@@ -8,7 +8,6 @@ const TvShows = () => {
   const [onTheAir, setOnTheAir] = useState([]);
   const [popular, setPopular] = useState([]);
   const [topRated, setTopRated] = useState([]);
-  const scrollRef = useRef(null);
 
   const options = {
     method: 'GET',
@@ -44,10 +43,7 @@ const TvShows = () => {
       .catch(err => console.error(err));
   }, []);
 
-  const handleWheel = (e) => {
-    e.preventDefault();
-    scrollRef.current.scrollLeft += e.deltaY;
-  };
+  
 
   const renderTvShows = (tvShows) => {
     return tvShows.map(show => (
@@ -55,6 +51,7 @@ const TvShows = () => {
         <img src={`https://image.tmdb.org/t/p/w500${show.poster_path}`} alt={show.name} />
         <p>{show.name}</p>
       </div>
+
     ));
   };
 
@@ -68,22 +65,22 @@ const TvShows = () => {
            
     <h1 className='Header'>TvShows</h1>
       <h2>Airing Today</h2>
-      <div className="tv-show-row" ref={scrollRef} onWheel={handleWheel}>
+      <div className="tv-show-row" >
         {renderTvShows(airingToday)}
       </div>
 
       <h2>On The Air</h2>
-      <div className="tv-show-row" ref={scrollRef} onWheel={handleWheel}>
+      <div className="tv-show-row" >
         {renderTvShows(onTheAir)}
       </div>
 
       <h2>Popular</h2>
-      <div className="tv-show-row" ref={scrollRef} onWheel={handleWheel}>
+      <div className="tv-show-row" >
         {renderTvShows(popular)}
       </div>
 
       <h2>Top Rated</h2>
-      <div className="tv-show-row" ref={scrollRef} onWheel={handleWheel}>
+      <div className="tv-show-row" >
         {renderTvShows(topRated)}
       </div>
     </div>
@@ -91,3 +88,4 @@ const TvShows = () => {
 };
 
 export default TvShows;
+

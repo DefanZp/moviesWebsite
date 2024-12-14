@@ -10,3 +10,15 @@ body{
   color: white;
   font-family: 'poppins';
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Poppins;
+}
